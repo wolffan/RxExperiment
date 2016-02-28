@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var AButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.AButton.rx_tap.subscribeNext { _ in
+            print("tap")
+        }
     }
 
     override func didReceiveMemoryWarning() {

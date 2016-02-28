@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7FD55E473DE64F51F3594EBF /* Pods_RxExperiment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C99DD03CFAAEC3DB9980DA0 /* Pods_RxExperiment.framework */; };
+		CD467F4A1C8270520067E142 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD467F491C8270520067E142 /* RxSwift.framework */; };
 		CD9BD4A61C82650000FC167D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9BD4A51C82650000FC167D /* AppDelegate.swift */; };
 		CD9BD4A81C82650000FC167D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9BD4A71C82650000FC167D /* ViewController.swift */; };
 		CD9BD4AB1C82650000FC167D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9BD4A91C82650000FC167D /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		2673063649FB00146ECB3E98 /* Pods-RxExperiment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxExperiment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxExperiment/Pods-RxExperiment.debug.xcconfig"; sourceTree = "<group>"; };
 		3C99DD03CFAAEC3DB9980DA0 /* Pods_RxExperiment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxExperiment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE31537BB61895DE030962A /* Pods-RxExperiment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxExperiment.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxExperiment/Pods-RxExperiment.release.xcconfig"; sourceTree = "<group>"; };
+		CD467F491C8270520067E142 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = "Pods/../build/Debug-iphoneos/RxSwift.framework"; sourceTree = "<group>"; };
 		CD9BD4A21C82650000FC167D /* RxExperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxExperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9BD4A51C82650000FC167D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD9BD4A71C82650000FC167D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD467F4A1C8270520067E142 /* RxSwift.framework in Frameworks */,
 				7FD55E473DE64F51F3594EBF /* Pods_RxExperiment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +85,7 @@
 		230FD5713E5853D2A8E0F33F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD467F491C8270520067E142 /* RxSwift.framework */,
 				3C99DD03CFAAEC3DB9980DA0 /* Pods_RxExperiment.framework */,
 			);
 			name = Frameworks;
@@ -475,6 +479,10 @@
 			baseConfigurationReference = 2673063649FB00146ECB3E98 /* Pods-RxExperiment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = RxExperiment/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -488,6 +496,10 @@
 			baseConfigurationReference = 4AE31537BB61895DE030962A /* Pods-RxExperiment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = RxExperiment/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

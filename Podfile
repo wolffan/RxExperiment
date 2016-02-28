@@ -3,4 +3,5 @@ use_frameworks!
 
 target 'RxExperiment' do
   pod 'RxSwift', '~> 2.2'
+  pod 'RxCocoa', '~> 2.2'
 end
